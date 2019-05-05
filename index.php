@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'header.php';?>
 <section id="layout-content">
     <div class="jumbotron" style="-webkit-background-size: 100%;background-size: 100%;">
         <div class="container">
@@ -41,8 +41,8 @@
                 </div>
             </div>
             <div class="col-sm-8">
-                <img src="/img/chrome-top.png" style="width:100%" />
-                <img src="/img/screen/ccms.jpg" style="width:100%" />
+                <img src="/assets/img/chrome-top.png" style="width:100%" />
+                <img src="/assets/img/screen/ccms.jpg" style="width:100%" />
             </div>
         </div>
         <br />
@@ -53,9 +53,9 @@
 
 
             <div class="col-sm-8">
-                <img src="/img/chrome-top.png" style="width:100%" />
-                <img src="/img/screen/s-1.jpg" style="width:100%" />
-                <img src="/img/chrome-bottom.png" style="width:100%" />
+                <img src="/assets/img/chrome-top.png" style="width:100%" />
+                <img src="/assets/img/screen/s-1.jpg" style="width:100%" />
+                <img src="/assets/img/chrome-bottom.png" style="width:100%" />
 
             </div>
 
@@ -83,7 +83,7 @@
         <br />
 
     </div>
-    <?php include 'pages/features.php'; ?>
+    <?php include 'pages/features.php';?>
 
     <section id="layout-content">
         <div class="container">
@@ -93,13 +93,13 @@
                     <br />
 
                     <div class="thumbnail text-center">
-                        <img src="/img/demo-icon.png" style="width:100px;height: 80px;" />
+                        <img src="/assets/img/demo-icon.png" style="width:100px;height: 80px;" />
                         <span>DEMO</span>
 
                         <div class="caption">
                             <p>
                                 email: admin@app.com <br />password: password<br />
-                                <a target="_blank" href="http://ccms-demo.amdtllc.com" class="btn btn-lg btn-primary"
+                                <a target="_blank" href="#" class="btn btn-lg btn-primary"
                                     role="button">DEMO</a>
 
                                 <a href="#pricing" class="btn btn-lg btn-info nav-item" role="button">Download</a>
@@ -110,26 +110,9 @@
             </div>
         </div>
     </section>
-    <?php if (isset($_GET['affiliate']) || isset($aff)): ?>
-    <section id="layout-content">
-        <div id="pricing"></div>
-        <div class="container">
-
-            <div class="h2 title bg-yellow">Pricing</div>
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <a href="https://www.jvzoo.com/b/0/230301/1"><img src="http://i.jvzoo.com/0/230301/1" alt="GIVEu"
-                            border="0" /></a>
-                </div>
-            </div>
-    </section>
-    <?php elseif (isset($cc)): ?>
-    <?php include 'pages/evanto-pricing.php'; ?>
-    <?php else: ?>
-    <?php include 'pages/pricing.php'; ?>
-    <?php endif; ?>
+    <?php include 'pages/pricing.php';?>
 </section>
-<?php include 'footer.php'; ?>
+<?php include 'footer.php';?>
 
 <script>
     $('.form').submit(function (e) {
@@ -168,7 +151,7 @@
                     <br/>
                     <button class="btn btn-success btn-xlg charge"
                             data-key="<?php echo Config::settings('stripe_public'); ?>"
-data-image="/img/checkout.png"
+data-image="/assets/img/checkout.png"
 data-currency="
 <?php echo Config::settings('currency'); ?>"
 data-name=""

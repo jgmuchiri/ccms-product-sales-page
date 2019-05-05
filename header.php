@@ -8,9 +8,6 @@ if (isset($_POST['pay'])) {
     $charge = new Charge();
     $charge->pay();
 }
-
-//add this code for any page that required affiliates
-require_once 'Affiliates.php';
 ?>
 <!DOCTYPE html>
 <html>

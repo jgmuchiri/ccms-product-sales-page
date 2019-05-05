@@ -1,4 +1,4 @@
-<script src="/js/bootstrap-notify.js"></script>
+<script src="/assets/js/bootstrap-notify.js"></script>
 
 <script>
     function notice(errorNote, type) {
@@ -21,7 +21,6 @@
     </script>
 <?php endif;
 //clear session
-$_SESSION['msg']="";
-$_SESSION['type']="";
+$_SESSION['msg']  = "";
+$_SESSION['type'] = "";
 ?>
-
