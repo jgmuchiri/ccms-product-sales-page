@@ -1,0 +1,7 @@
+/.idea
+/.git
+vendor
+storage
+/public/uploads
+/public/downloads
+config.php
