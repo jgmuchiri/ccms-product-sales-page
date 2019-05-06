@@ -5,21 +5,22 @@ if (isset($_POST['dl'])):
 
     $file_name = $_POST['dl'];
 
-    switch($file_name){
+    switch ($file_name) {
         case "guide":
-            $fakeFileName = "giveu-ccms-user-guide.pdf";
-            $realFileName = "GIVEu CCMS User Guide.pdf";
+            $fakeFileName = "user-guide.pdf";
+            $realFileName = "User_Guide.pdf";
             break;
         case "app":
-            $fakeFileName = "giveu_ccms_by_amdtllc.zip";
-            $realFileName = "ccms-08-28-2017-v3.zip";
+            $fakeFileName = "ccms.zip";
+            $realFileName = "this_can_be_random_name.zip";
             break;
     }
 
-
     $file = $dl_path . $realFileName;
 
-    if( !file_exists($file) ) die("File not found");
+    if (!file_exists($file)) {
+        die("File not found");
+    }
 
     $fp = fopen($file, 'rb');
 
